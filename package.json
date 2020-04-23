@@ -2,13 +2,13 @@
   "name": "szpargalyfinally",
   "version": "0.0.0",
   "scripts": {
-    "buildProd": "ng build --base-href=/your-project-slug/",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "buildProd": "ng build --base-href=/szpargalyfinally/"
   },
   "private": true,
   "dependencies": {
