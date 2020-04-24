@@ -3,15 +3,27 @@
       <img class="szpargaly-logo.jpg" src="assets/szpargaly-logo.jpg">
   </header>
   <nav *ngIf="desktop">
-      <li><button (click)="contact.scrollIntoView({ behavior: 'smooth', block: 'start' })">Kontakt</button></li>
-      <li><button (click)="maps.scrollIntoView({ behavior: 'smooth', block: 'start' })">Dojazda</button></li>
-      <li><button (click)="aboutus.scrollIntoView({ behavior: 'smooth', block: 'start' })">O nas</button></li>
+      <li><button (click)="contact.scrollIntoView({ behavior: 'smooth', block: 'center' })">Kontakt</button></li>
+      <li><button (click)="maps.scrollIntoView({ behavior: 'smooth', block: 'center' })">Dojazd</button></li>
+      <li><button (click)="aboutus.scrollIntoView({ behavior: 'smooth', block: 'center' })">O nas</button></li>
       
   </nav>
   <main>
-      <p>Witaj na stronie <font style="color:var(--head-color)">S</font>zpargały.pl<font style="color:var(--head-color)">!</font></p>
-      <button >Zobacz nasze produkty</button>
+      <p>&nbsp;Witaj na stronie <font style="color:var(--head-color)">S</font>zpargały.pl<font style="color:var(--head-color)">!</font></p>
+      <button><a href="https://allegro.pl/uzytkownik/Speeedcuber?fbclid=IwAR04ktYq1QMd844_PWt9lCvLNxn7m-xZ0UOfsUTohdSHs5p21E0JBzqkUZw&bmatch=baseline-product-cl-eyesa2-engag-dict43-uni-1-1-0318">Zobacz nasze produkty</a></button>
   </main>
+  <div *ngIf="desktop" class="allegro">
+    <div class="blockAllegro">
+        <div class="blockAllegroSmall"><img class="allegroImgSmart" src="assets/allegro-smart.png"></div>
+        <div class="blockAllegroSmall"><img class="allegroImgSuperSprzedawca" src="assets/super-sprzedawca.png"></div>
+        <div class="blockAllegroSmall"><img class="allegroImgCash" src="assets/cash.png"></div>
+    </div>
+    <div class="blockAllegro">
+        <div class="blockAllegroSmall"><p>Allego Smart, dostępny w naszych ofertach, przy zakupach za co najmniej 40 zł gwarantuje darmową wysyłkę do Paczkomatów i punktów Żabka, Orlen i Poczta Polska. Wysyłka kurierska z pakietem Smart  jest darmowa przy zamówieniach powyżej 100 zł.</p></div>
+        <div class="blockAllegroSmall"><p>Nasz sklep na Allegro posiada odznaczenie Super Sprzedawcy - wyróżnia nas 100% pozytywnych ocec i komentarzy, najwyższy poziom obsługi klienta oraz szybka i terminowa wysyłka (zdarza się, że paczka jest u Kupującego już następnego dnia!). </p></div>
+        <div class="blockAllegroSmall"><p>Duża część naszych produktów dodatkowo posiada Monety, które można wymieniać na kupony i płacić nimi podczas kolejnych zakupów.</p></div>
+    </div>
+  </div>
   <nav *ngIf="mobile || tablet">
     <li><button (click)="contact.scrollIntoView({ behavior: 'smooth', block: 'start' })">Kontakt</button></li>
     <li><button (click)="maps.scrollIntoView({ behavior: 'smooth', block: 'start' })">Dojazd</button></li>
@@ -19,7 +31,7 @@
   </nav>
 </div>
 
-<div #contact>
+<div class="contact" #contact>
   <section class="contact" *ngIf="mobile || tablet">
       <article>
           <div class="block">
@@ -64,7 +76,7 @@
               </p> 
                <h3>Godziny otwarcia</h3>
               <table>
-                  <tr><td>Dni powszechne:</td>&nbsp;<td>9:00-17:00</td></tr>
+                  <tr><td>Pon - Pt:</td>&nbsp;<td>9:00-17:00</td></tr>
                   <tr><td>Sobota:</td>&nbsp;<td>9:00-14:00</td></tr>
                   <tr><td>Niedziela:</td>&nbsp;<td>Nieczynne</td></tr>
               </table>
@@ -80,9 +92,6 @@
   </section>
 </div>
 
-<div #maps class="maps">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2440.581933447756!2d17.575739915946752!3d52.28729146120108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4704e84c8e5e9383%3A0xc87fa98e801a73a4!2sKaliska%2067%2C%2062-303%20Kaczanowo!5e0!3m2!1spl!2spl!4v1587551152958!5m2!1spl!2spl" width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-</div>
 
 <div class="aboutus" #aboutus>
     <section class="aboutus" *ngIf="mobile || tablet">
@@ -124,3 +133,7 @@
             </article>
     </section>
   </div>
+
+  <div #maps class="maps">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2440.581933447756!2d17.575739915946752!3d52.28729146120108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4704e84c8e5e9383%3A0xc87fa98e801a73a4!2sKaliska%2067%2C%2062-303%20Kaczanowo!5e0!3m2!1spl!2spl!4v1587551152958!5m2!1spl!2spl" width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>
