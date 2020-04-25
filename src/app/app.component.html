@@ -1,6 +1,8 @@
 <div class="hero-image">
-  <header #headerElement>
+  <header *ngIf="desktop || tablet">
       <img class="szpargaly-logo.jpg" src="assets/szpargaly-logo.jpg">
+  </header>
+  <header class="mobileHeader" *ngIf="mobile">
   </header>
   <nav *ngIf="desktop">
       <li><button (click)="contact.scrollIntoView({ behavior: 'smooth', block: 'center' })">Kontakt</button></li>
@@ -8,7 +10,8 @@
       <li><button (click)="maps.scrollIntoView({ behavior: 'smooth', block: 'center' })">Dojazda</button></li>
   </nav>
   <main>
-      <p>&nbsp;Witaj na stronie <font style="color:var(--head-color)">S</font>zpargały.pl<font style="color:var(--head-color)">!</font></p>
+      <p *ngIf="desktop">&nbsp;Witaj na stronie <font style="color:var(--head-color)">S</font>zpargały.pl<font style="color:var(--head-color)">!</font></p>
+      <p *ngIf="mobile || tablet">Witaj na stronie <font style="color:var(--head-color)">S</font>zpargały.pl<font style="color:var(--head-color)">!</font></p>
       <button><a href="https://allegro.pl/uzytkownik/Speeedcuber?fbclid=IwAR04ktYq1QMd844_PWt9lCvLNxn7m-xZ0UOfsUTohdSHs5p21E0JBzqkUZw&bmatch=baseline-product-cl-eyesa2-engag-dict43-uni-1-1-0318">Zobacz nasze produkty</a></button>
   </main>
   <div *ngIf="desktop" class="allegro">
@@ -34,6 +37,7 @@
         <div class="blockAllegroSmall"><p>Allego Smart, dostępny w naszych ofertach, przy zakupach za co najmniej 40 zł gwarantuje darmową wysyłkę do Paczkomatów i punktów Żabka, Orlen i Poczta Polska. Wysyłka kurierska z pakietem Smart  jest darmowa przy zamówieniach powyżej 100 zł.</p></div>
         <div class="blockAllegroSmall allegroImgSuperSprzedawca"><img src="assets/super-sprzedawca.png"></div>
         <div class="blockAllegroSmall"><p>Nasz sklep na Allegro posiada odznaczenie Super Sprzedawcy - wyróżnia nas 100% pozytywnych ocec i komentarzy, najwyższy poziom obsługi klienta oraz szybka i terminowa wysyłka (zdarza się, że paczka jest u Kupującego już następnego dnia!). </p></div>
+        <div class="blockAllegroSmall allegroImgCash"><img src="assets/cash.png"></div>
         <div class="blockAllegroSmall"><p>Duża część naszych produktów dodatkowo posiada Monety, które można wymieniać na kupony i płacić nimi podczas kolejnych zakupów.</p></div>
   </div>
 

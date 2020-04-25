@@ -4,9 +4,12 @@
         width: 100%;
         height: 812px;
     }
-    header{
-        padding: 5% 10%;
+    .mobileHeader{
+        height: 120px;
+        width: 100%;
         float: left;
+        box-shadow: 2px 2px 20px;
+        opacity: 0.1;
     }
     header img{
         height: 100%;
@@ -85,15 +88,18 @@
     }
     .allegroImgSmart{
         opacity: 0.7;
-        height: 10%;
+        height: 50px;
     }
     .allegroImgSuperSprzedawca{
         opacity: 0.7;
+        height: 150px;
+        margin:0 10%;
     }
     .allegroImgCash{
-        width: 25%;
-        margin:0 40%;
-
+        height: 100px;
+    }
+    .allegroImgCash img{
+        height: 100px;
     }
     .allegro p{
         color:grey;
@@ -330,18 +336,20 @@
         opacity: 0.7;
     }
     .allegroImgSmart{
-        height: 32%;
+        height: 50px;
         width: 70%;
         margin: 10% 15% 0 15%;
         opacity: 0.7;
     }
     .allegroImgSuperSprzedawca{
-        width: 25%;
-        margin:0 40%;
+        width: 80px;
+        height: 80px;
+        margin:0 30%;
         opacity: 0.7;
     }
     .allegroImgCash{
-        width: 25%;
+        height: 50px;
+        width: 50px;
         margin:0 40%;
 
     }
