@@ -60,10 +60,10 @@
 
         /* allegro site */
     .allegro{
-        width: 90%;
-        height: 430px;
+        width: 100%;
+        height: 812px;
         float: left;
-        margin: 0 5%;
+        margin: 0;
 
     }
     .blockAllegro{
@@ -77,20 +77,17 @@
         border-right: 2px solid var(--head-color);
     }
     .blockAllegroSmall{
-        height: 32%;
-        width: 90%;
+        height: 22%;
+        width: 80%;
         float: left;
-        margin: 0 0%;
-        opacity: 0.7;
+        margin: 3% 10% 0 10%;
+        text-align: center;
     }
     .allegroImgSmart{
-        width: 70%;
-        margin: 10% 15% 0 15%;
         opacity: 0.7;
+        height: 10%;
     }
     .allegroImgSuperSprzedawca{
-        width: 25%;
-        margin:0 40%;
         opacity: 0.7;
     }
     .allegroImgCash{
@@ -102,7 +99,6 @@
         color:grey;
         font-weight: bold;
         opacity: 0.8;
-        margin: 2% 0
     }
     
     
@@ -136,8 +132,7 @@
         color:grey;
     }
     .last{
-        margin-bottom: 5%;
-        border-bottom: 0px;
+        border-bottom: 1px solid var(--head-color);
     }
     
     
@@ -165,12 +160,14 @@
         width: 80%;
     }
     .us{
-        height: 100%;
+        height: 80%;
         width: 100%;
         border-bottom: 1px solid var(--head-color);
         float: left;
-        font-size: 1.5em;
+        font-size: 1em;
+        font-weight: normal;
         text-align: center;
+        margin: 10% 0 0 0;
         
     }
     .us h3{
@@ -178,7 +175,6 @@
         color: grey;
     }
     .last{
-        margin-bottom: 5%;
         border-bottom: 0px;
     }
 }
@@ -232,7 +228,9 @@
         font-size: 2em;
         margin: 2% 5%;
         padding: 0;
-
+    }
+    .us{
+        font-size: 1.5em;       
     }
 }
 @media(min-width:1025px){
@@ -332,6 +330,7 @@
         opacity: 0.7;
     }
     .allegroImgSmart{
+        height: 32%;
         width: 70%;
         margin: 10% 15% 0 15%;
         opacity: 0.7;

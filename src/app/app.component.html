@@ -30,41 +30,35 @@
   </nav>
 </div>
 <div *ngIf="mobile || tablet" class="allegro">
-    <div class="blockAllegro">
-        <div class="blockAllegroSmall"><img class="allegroImgSmart" src="assets/allegro-smart.png"></div>
-        <div class="blockAllegroSmall"><img class="allegroImgSuperSprzedawca" src="assets/super-sprzedawca.png"></div>
-        <div class="blockAllegroSmall"><img class="allegroImgCash" src="assets/cash.png"></div>
-    </div>
-    <div class="blockAllegro">
+        <div class="blockAllegroSmall allegroImgSmart"><img src="assets/allegro-smart.png"></div>
         <div class="blockAllegroSmall"><p>Allego Smart, dostępny w naszych ofertach, przy zakupach za co najmniej 40 zł gwarantuje darmową wysyłkę do Paczkomatów i punktów Żabka, Orlen i Poczta Polska. Wysyłka kurierska z pakietem Smart  jest darmowa przy zamówieniach powyżej 100 zł.</p></div>
+        <div class="blockAllegroSmall allegroImgSuperSprzedawca"><img src="assets/super-sprzedawca.png"></div>
         <div class="blockAllegroSmall"><p>Nasz sklep na Allegro posiada odznaczenie Super Sprzedawcy - wyróżnia nas 100% pozytywnych ocec i komentarzy, najwyższy poziom obsługi klienta oraz szybka i terminowa wysyłka (zdarza się, że paczka jest u Kupującego już następnego dnia!). </p></div>
         <div class="blockAllegroSmall"><p>Duża część naszych produktów dodatkowo posiada Monety, które można wymieniać na kupony i płacić nimi podczas kolejnych zakupów.</p></div>
-    </div>
   </div>
-
 
 <div class="contact" #contact>
   <section class="contact" *ngIf="mobile || tablet">
       <article>
           <div class="block">
-              <h3>Zadzwoń do nas</h3>
+              <h3><i class="fas fa-phone-square-alt"></i>&nbsp;Zadzwoń do nas</h3>
               <p><a href="tel:726 930 900">726 930 900</a></p>
           </div>
       </article>
       <article>
           <div class="block">
-              <h3>Znajdź nas na facebooku</h3>
+              <h3><i class="fab fa-facebook-square"></i>&nbsp;Znajdź nas na facebooku</h3>
               <a href="https://www.facebook.com/szpargaly.sklep/">Facebok/Szpargaly</a>
           </div>
       </article>
       <article>
           <div class="block">
-              <h3>Napisz do nas maila</h3>
+              <h3><i class="fas fa-envelope-square"></i>&nbsp;Napisz do nas maila</h3>
               <p>kontakt@szpargaly.com</p>
           </div>
       </article>
       <article>
-          <div class="block last">
+          <div class="block">
               <h3>Odwiedź nasz sklep stacjonarny</h3>
               <p>Kaczanowo ul. Kaliska 67
                   Wielkopolska 62-303
