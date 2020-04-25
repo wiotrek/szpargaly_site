@@ -7,7 +7,7 @@
   <nav *ngIf="desktop">
       <li><button (click)="contact.scrollIntoView({ behavior: 'smooth', block: 'center' })">Kontakt</button></li>
       <li><button (click)="aboutus.scrollIntoView({ behavior: 'smooth', block: 'center' })">O nas</button></li>
-      <li><button (click)="maps.scrollIntoView({ behavior: 'smooth', block: 'center' })">Dojazda</button></li>
+      <li><button (click)="maps.scrollIntoView({ behavior: 'smooth', block: 'center' })">Dojazd</button></li>
   </nav>
   <main>
       <p *ngIf="desktop">&nbsp;Witaj na stronie <font style="color:var(--head-color)">S</font>zpargały.pl<font style="color:var(--head-color)">!</font></p>
@@ -21,8 +21,8 @@
         <div class="blockAllegroSmall"><img class="allegroImgCash" src="assets/cash.png"></div>
     </div>
     <div class="blockAllegro">
-        <div class="blockAllegroSmall"><p>Allego Smart, dostępny w naszych ofertach, przy zakupach za co najmniej 40 zł gwarantuje darmową wysyłkę do Paczkomatów i punktów Żabka, Orlen i Poczta Polska. Wysyłka kurierska z pakietem Smart  jest darmowa przy zamówieniach powyżej 100 zł.</p></div>
-        <div class="blockAllegroSmall"><p>Nasz sklep na Allegro posiada odznaczenie Super Sprzedawcy - wyróżnia nas 100% pozytywnych ocec i komentarzy, najwyższy poziom obsługi klienta oraz szybka i terminowa wysyłka (zdarza się, że paczka jest u Kupującego już następnego dnia!). </p></div>
+        <div class="blockAllegroSmall"><p>Allegro Smart, dostępne w naszych ofertach, przy zakupach za co najmniej 40 zł gwarantuje darmową wysyłkę do Paczkomatów i punktów Żabka, Orlen i Poczta Polska. Wysyłka kurierska z pakietem Smart  jest darmowa przy zamówieniach powyżej 100 zł.</p></div>
+        <div class="blockAllegroSmall"><p>Nasz sklep na Allegro posiada odznaczenie Super Sprzedawcy - wyróżnia nas 100% pozytywnych ocen i komentarzy, najwyższy poziom obsługi klienta oraz szybka i terminowa wysyłka (zdarza się, że paczka jest u Kupującego już następnego dnia!). </p></div>
         <div class="blockAllegroSmall"><p>Duża część naszych produktów dodatkowo posiada Monety, które można wymieniać na kupony i płacić nimi podczas kolejnych zakupów.</p></div>
     </div>
   </div>
@@ -34,9 +34,9 @@
 </div>
 <div *ngIf="mobile || tablet" class="allegro">
         <div class="blockAllegroSmall allegroImgSmart"><img src="assets/allegro-smart.png"></div>
-        <div class="blockAllegroSmall"><p>Allego Smart, dostępny w naszych ofertach, przy zakupach za co najmniej 40 zł gwarantuje darmową wysyłkę do Paczkomatów i punktów Żabka, Orlen i Poczta Polska. Wysyłka kurierska z pakietem Smart  jest darmowa przy zamówieniach powyżej 100 zł.</p></div>
+        <div class="blockAllegroSmall"><p>Allegro Smart, dostępny w naszych ofertach, przy zakupach za co najmniej 40 zł gwarantuje darmową wysyłkę do Paczkomatów i punktów Żabka, Orlen i Poczta Polska. Wysyłka kurierska z pakietem Smart  jest darmowa przy zamówieniach powyżej 100 zł.</p></div>
         <div class="blockAllegroSmall allegroImgSuperSprzedawca"><img src="assets/super-sprzedawca.png"></div>
-        <div class="blockAllegroSmall"><p>Nasz sklep na Allegro posiada odznaczenie Super Sprzedawcy - wyróżnia nas 100% pozytywnych ocec i komentarzy, najwyższy poziom obsługi klienta oraz szybka i terminowa wysyłka (zdarza się, że paczka jest u Kupującego już następnego dnia!). </p></div>
+        <div class="blockAllegroSmall"><p>Nasz sklep na Allegro posiada odznaczenie Super Sprzedawcy - wyróżnia nas 100% pozytywnych ocen i komentarzy, najwyższy poziom obsługi klienta oraz szybka i terminowa wysyłka (zdarza się, że paczka jest u Kupującego już następnego dnia!). </p></div>
         <div class="blockAllegroSmall allegroImgCash"><img src="assets/cash.png"></div>
         <div class="blockAllegroSmall"><p>Duża część naszych produktów dodatkowo posiada Monety, które można wymieniać na kupony i płacić nimi podczas kolejnych zakupów.</p></div>
   </div>
@@ -95,8 +95,8 @@
       <div class="block">
           <article class="last">
               <h3><i class="fas fa-envelope-square"></i>&nbsp;Napisz do nas maila</h3>
-              <input type="text" value="Twój adres email" />
-              <input type="text" value="Co chcesz nam powiedzieć?" style="height: 270px;"/>
+              <input type="text" onfocus="this.value=''" value="Twój adres email" />
+              <input type="text" onfocus="this.value=''"  value="Co chcesz nam powiedzieć?" style="height: 270px;"/>
           </article>
       </div>
   </section>
