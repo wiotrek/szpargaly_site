@@ -4,9 +4,8 @@
   </header>
   <nav *ngIf="desktop">
       <li><button (click)="contact.scrollIntoView({ behavior: 'smooth', block: 'center' })">Kontakt</button></li>
-      <li><button (click)="maps.scrollIntoView({ behavior: 'smooth', block: 'center' })">Dojazd</button></li>
       <li><button (click)="aboutus.scrollIntoView({ behavior: 'smooth', block: 'center' })">O nas</button></li>
-      
+      <li><button (click)="maps.scrollIntoView({ behavior: 'smooth', block: 'center' })">Dojazd</button></li>
   </nav>
   <main>
       <p>&nbsp;Witaj na stronie <font style="color:var(--head-color)">S</font>zpargały.pl<font style="color:var(--head-color)">!</font></p>
@@ -26,10 +25,23 @@
   </div>
   <nav *ngIf="mobile || tablet">
     <li><button (click)="contact.scrollIntoView({ behavior: 'smooth', block: 'start' })">Kontakt</button></li>
-    <li><button (click)="maps.scrollIntoView({ behavior: 'smooth', block: 'start' })">Dojazd</button></li>
     <li><button (click)="aboutus.scrollIntoView({ behavior: 'smooth', block: 'start' })">O nas</button></li>
+    <li><button (click)="maps.scrollIntoView({ behavior: 'smooth', block: 'start' })">Dojazd</button></li>
   </nav>
 </div>
+<div *ngIf="mobile || tablet" class="allegro">
+    <div class="blockAllegro">
+        <div class="blockAllegroSmall"><img class="allegroImgSmart" src="assets/allegro-smart.png"></div>
+        <div class="blockAllegroSmall"><img class="allegroImgSuperSprzedawca" src="assets/super-sprzedawca.png"></div>
+        <div class="blockAllegroSmall"><img class="allegroImgCash" src="assets/cash.png"></div>
+    </div>
+    <div class="blockAllegro">
+        <div class="blockAllegroSmall"><p>Allego Smart, dostępny w naszych ofertach, przy zakupach za co najmniej 40 zł gwarantuje darmową wysyłkę do Paczkomatów i punktów Żabka, Orlen i Poczta Polska. Wysyłka kurierska z pakietem Smart  jest darmowa przy zamówieniach powyżej 100 zł.</p></div>
+        <div class="blockAllegroSmall"><p>Nasz sklep na Allegro posiada odznaczenie Super Sprzedawcy - wyróżnia nas 100% pozytywnych ocec i komentarzy, najwyższy poziom obsługi klienta oraz szybka i terminowa wysyłka (zdarza się, że paczka jest u Kupującego już następnego dnia!). </p></div>
+        <div class="blockAllegroSmall"><p>Duża część naszych produktów dodatkowo posiada Monety, które można wymieniać na kupony i płacić nimi podczas kolejnych zakupów.</p></div>
+    </div>
+  </div>
+
 
 <div class="contact" #contact>
   <section class="contact" *ngIf="mobile || tablet">
