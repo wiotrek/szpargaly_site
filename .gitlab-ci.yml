@@ -7,7 +7,7 @@ pages:
     - npm install -g @angular/cli@9.1.1
     - npm install
     - npm run buildProd
-    - lftp -e "open www.mkwk019.cba.pl; user $FTP_USERNAME $FTP_PASSWORD; mirror -X .* -X .*/ --reverse --verbose --delete local-folder/ destination-folder/; bye"
+    - lftp -e "open ftp.mkwk019.cba.pl; user $FTP_USERNAME $FTP_PASSWORD; mirror -X .* -X .*/ --reverse --verbose --delete local-folder/ destination-folder/; bye"
   artifacts:
     paths:
       - public
