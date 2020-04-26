@@ -3,11 +3,13 @@ pages:
   cache:
     paths:
       - node_modules/
+  before_script:
+  - apt-get update -qy
+  - apt-get install -y lftp
   script:
     - npm install -g @angular/cli@9.1.1
     - npm install
     - npm run buildProd
-    - apt-get install -y lftp
     - lftp -e "open mkwk019.cba.pl; user $FTP_USERNAME $FTP_PASSWORD; mirror -X .* -X .*/ --reverse --verbose --delete local-folder/ destination-folder/; bye"
   artifacts:
     paths:
