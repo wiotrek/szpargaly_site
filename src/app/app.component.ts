@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { DeviceDetectorService } from 'ngx-device-detector';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -19,5 +20,8 @@ export class AppComponent {
     console.log(this.deviceService.isDesktop());
     console.log(this.deviceService.isMobile());
     console.log(this.deviceService.isTablet());
+  }
+  ngOnInit(){
+    AOS.init();
   }
 }
