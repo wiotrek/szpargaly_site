@@ -5,7 +5,7 @@
         height: 812px;
     }
     .mobileHeader{
-        height: 120px;
+        height: 0;
         width: 100%;
         float: left;
         box-shadow: 2px 2px 20px;
@@ -282,7 +282,7 @@
         height: 18%;
     }
     nav{
-        padding: 5% 0 0 5%;
+        padding: 5% 0 1% 5%;
         height: 100px;
         border-top: 0;
         width: 50%;
@@ -298,8 +298,9 @@
         box-shadow: 0;
         opacity: 60%;
         float: left;
-        height: 70%;
+        height: 40px;
         font-size: 1em;
+        width: 150px;
     }
     main button:hover, nav button:hover{
         padding: 0 0 2px 2px;
@@ -339,19 +340,19 @@
     .allegroImgSmart{
         height: 50px;
         width: 70%;
-        margin: 10% 15% 0 15%;
+        margin: 30px 10px;
         opacity: 0.7;
     }
     .allegroImgSuperSprzedawca{
         width: 80px;
         height: 80px;
-        margin:0 30%;
+        margin:10px 40px;
         opacity: 0.7;
     }
     .allegroImgCash{
         height: 50px;
-        width: 50px;
-        margin:0 40%;
+        width: 63px;
+        margin:10px 40px;
 
     }
     .allegro p{
@@ -479,12 +480,12 @@
         font-size: 1.5em;
     }
     article .block2{
-        height: 60%;
+        height: 50%;
         width: 30%;
         border: 2px solid grey;
         margin: 0;
         margin-left: 40%;
-        padding: 60px 50px 40px 50px;
+        padding: 70px 50px 40px 50px;
         float: left;
         position: relative;
         border-radius: 20px 0px;
