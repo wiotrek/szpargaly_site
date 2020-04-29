@@ -156,32 +156,34 @@
     /* aboutus site */
     .aboutus{
         width: 100%;
-        height: 812px;
+        height: auto;
         float: left;
     }
-    .aboutus article{
+    .blockUs{
         height: 49%;
-        float: left;
-        padding: 1% 10%;
-        width: 80%;
-    }
-    .us{
-        height: 80%;
         width: 100%;
-        border-bottom: 1px solid var(--head-color);
         float: left;
-        font-size: 1em;
-        font-weight: normal;
+    }
+    .articleUs{
+        width: 80%;
+        margin: 0 10%;
+        height: 100%;
+        padding: 0;
+        border-bottom: 1px solid var(--head-color);
+    }
+    .articleUs h3{
+        margin: 10% 0;
+        height: 85%;
+        font-size: 1.5em;
+        font-weight: solid;
+        color:grey;
+        opacity: 1;
         text-align: center;
-        margin: 10% 0 0 0;
-        
+        float: left;
     }
-    .us h3{
-        padding: 22% 0;
-        color: grey;
-    }
-    .last{
-        border-bottom: 0px;
+    .articleLastUs{
+        margin: 10% 0;
+        height: 70%;
     }
 }
 @media(min-width: 500px){
