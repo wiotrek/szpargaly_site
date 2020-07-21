@@ -1,148 +1,92 @@
 @media(min-width: 0px){
     .hero-image{
-        background-image: linear-gradient(to bottom, rgba(255,255,255, 0.5) 70%, rgba(255,255,255, 100)), url(../assets/main-background-mobile.jpg);
+        /* background-image: linear-gradient(to bottom, rgba(255,255,255, 0.5) 70%, rgba(255,255,255, 100)), url(../assets/main-background-mobile.jpg); */
         width: 100%;
-        height: 812px;
-    }
-    .mobileHeader{
-        height: 0;
-        width: 100%;
-        float: left;
-        box-shadow: 2px 2px 20px;
-        opacity: 0.1;
-    }
-    header img{
-        height: 100%;
-        width: 100%;
-        opacity: 30%;
-        box-shadow: 2px 2px 10px;
-        float: left;
-    }
-    nav{
-        float: left;
-        border-top: 1px solid;
-        border-color: var(--head-color);
-        height: 300px;
-        width: 100%;
-    }
-    nav li{
-        float: left;
-        list-style-type: none;
-        height: 30%;
-        width: 100%;
-    }
-    nav button{
-        color:black;
-        background-color: white;
-        font-size: 1em;
-        height: 60%;
-        width: 70%;
-        margin: 5% 15%;
-        box-shadow: 2px 2px 20px;
-        opacity: 70%;
     }
     main{
-        height: 300px;
         float: left;
         padding: 5% 5%;
     }
     main p{
         font-size: 2em;
         color:grey;
+        margin: 15% 0 10%;
     }
     main button{
-        margin: 5% 0;
+        margin: 5% 5% 25% 5%;
+        width: 90%;
         background-color: white;
         color:black;
         font-size: 1.5em;
-        width: 95%;
-        height: 20%;
         box-shadow: 2px 2px 30px;
         opacity: 60%;
+        padding: 5% 0;
     }
-
+    nav{
+        float: left;
+        width: 100%;
+    }
+    nav li{
+        float: left;
+        list-style-type: none;
+        width: 80%;
+        margin: 0 10%;
+        text-align: center;
+        padding: 10% 0;
+        font-size: x-large;
+        border-bottom: 1px dashed var(--head-color);
+        color:grey;
+    }
         /* allegro site */
     .allegro{
+        margin: 20% 0 0 0;
         width: 100%;
-        height: 812px;
         float: left;
-        margin: 0;
 
     }
-    .blockAllegro{
-        width: 49%;
-        height: 100%;
-        float: left;
+    .allegroInnerDiv div{
+        padding: 0 10%;
+        margin: 10% 0;
     }
-    .blockAllegro:first-child{
-        width: 39%;
-        margin: 0 5%;
-        border-right: 2px solid var(--head-color);
+    img.allegroSmartImg{
+        width: 100%;
+        align-self: center;
     }
-    .blockAllegroSmall{
-        height: 22%;
-        width: 80%;
-        float: left;
-        margin: 3% 10% 0 10%;
-        text-align: center;
+    img.allegroSuperImg{
+        width: 50%;
+        margin: 0 25%;
     }
-    .allegroImgSmart{
-        opacity: 0.7;
-        height: 50px;
-    }
-    .allegroImgSuperSprzedawca{
-        opacity: 0.7;
-        height: 150px;
-        margin:0 10%;
-    }
-    .allegroImgCash{
-        height: 70px;
-    }
-    .allegroImgCash img{
-        height: 70px;
+    img.allegroCashImg{
+        width: 25%;
+        margin: 0 37%;
     }
     .allegro p{
         color:grey;
         font-weight: bold;
         opacity: 0.8;
+        text-align: justify;
     }
     
     
     /* contact site */
     .contact{
+        margin: 10% 0 0;
         width: 100%;
-        height: 812px;
         float: left;
-    }
-    article{
-        height: 24%;
-        float: left;
-        padding: 1% 10%;
-        width: 80%;
         color:grey;
     }
-    .block{
-        height: 100%;
-        width: 100%;
-        border-bottom: 1px solid var(--head-color);
+    article.block{
+        padding: 10% 0;
         float: left;
-        font-size: 1.5em;
         text-align: center;
-        
+        line-height: 2em;
+        width: 100%;
+        border-bottom: 1px dashed var(--head-color);
+        font-size: 1.5em;
     }
-    .block h3{
-        padding: 10% 0 5% 0;
+    article.block:last-child{
+        border-bottom: 1px dashed var(--bg-color);
     }
-    .block a{
-        text-decoration: none;
-        color:grey;
-    }
-    .last{
-        border-bottom: 1px solid var(--head-color);
-    }
-    
-    
-    
     /* maps site */
     .maps{
         float: left;
@@ -152,217 +96,142 @@
         float: left;
         margin-top: 5%;
     }
-
-    /* aboutus site */
-    .aboutus{
-        width: 100%;
-        height: auto;
-        float: left;
-    }
-    .blockUs{
-        height: 49%;
-        width: 100%;
-        float: left;
-    }
-    .articleUs{
-        width: 80%;
-        margin: 0 10%;
-        height: 100%;
-        padding: 0;
-        border-bottom: 1px solid var(--head-color);
-    }
-    .articleUs h3{
-        margin: 10% 0;
-        height: 85%;
-        font-size: 1.5em;
-        font-weight: solid;
-        color:grey;
-        opacity: 1;
-        text-align: center;
-        float: left;
-    }
-    .articleLastUs{
-        margin: 10% 0;
-        height: 70%;
-    }
 }
 @media(min-width: 500px){
-    .hero-image{
-        background-image: linear-gradient(to bottom, rgba(255,255,255, 0.1) 70%, rgba(255,255,255, 100)), url(../assets/main-background-tablet.jpg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        height: 1000px;
-    }
-    header{
-        padding: 5% 10%;
-        float: left;
-    }
-    header img{
-        height: 100%;
-        width: 100%;
-        opacity: 30%;
-        box-shadow: 2px 2px 10px;
-        float: left;
-    }
     main{
-        height: 300px;
+        width: 80%;
+        margin: 10%;
+        padding: 0;
     }
     main p{
+        text-align: center;
         width: 100%;
-        font-size: 3em;
+        font-size: 4em;
+        margin: 5% 0 10%;
         
     }
     main button{
-        font-size: 2em;
-        width: 60%;
-        height: 25%;
-        margin: 3% 0 0 30%;
+        font-size: 2.5em;
+        width: 100;
     }
     nav{
         float: left;
-        border-top: 1px solid var(--head-color);
-        height: 400px;
+        margin: 10% 0;
+        border-top: 0;
     }
     nav li{
-        margin: 0;
-        width: 100%;
-        padding: 0;
+        margin: 0 10%;
+        width: 80;
+        padding: 3% 0;
+        font-size: 2.5em;
     }
-    nav button{
-        height: 90px;
-        width: 90%;
-        float: left;
-        opacity: 70%;
-        font-size: 2em;
-        margin: 2% 5%;
-        padding: 0;
+    /* allegro site */
+    img.allegroSmartImg{
+        width: 80%;
+        margin: 0 10%;
     }
-    .us{
-        font-size: 1.5em;       
+    img.allegroSuperImg{
+        width: 30%;
+        margin: 0 35%;
+    }
+    img.allegroCashImg{
+        width: 20%;
+        margin: 0 40%;
+    }
+    .allegroInnerDiv p{
+        font-size: large;
+    }
+    /* contact site */
+    section.contact p, section.contact h3{
+        font-size: larger;
     }
 }
 @media(min-width:1025px){
-    .hero-image{
-        background-image: linear-gradient(to bottom, rgba(255,255,255, 0) 70%, rgba(255,255,255, 10)), url(../assets/main-background.jpg);
-        background-repeat: no-repeat;
-        width: 100%;
-    }
-    header{
-        width: 30%;
-        height: 100px;
-        padding: 5% 0 0 10%;
-        margin: 0;
-    }
-    header img{
-        width: 280px;
-        height: 80px;
-        float: left;
-        box-shadow: 2px 2px 30px;
-        opacity: 60%;
-        padding: 0;
-        margin: 0;
-        opacity: 0;
-    }
-    main{
-        margin:5% 0 0 10%;
-        padding: 0;
-        float: left;
-        height: 300px;
-    }
-    main p{
-        border-left: 2px solid var(--head-color);
-        font-size: 3em;
-        font-family: "Century Gothic";
-        color:grey;
-    }
-    main button{
-        margin: 5% 0 0 50%;
-        box-shadow: 2px 2px 30px;
-        opacity: 60%;
-        font-size: 2em;
-        width: 70%;
-        height: 18%;
-    }
     nav{
-        padding: 5% 0 1% 5%;
-        height: 100px;
-        border-top: 0;
+        margin: 5% 5% 5% 45%;
         width: 50%;
-        border-bottom: 1px solid var(--head-color);
+        height: initial;
+        float: left;
     }
     nav li{
-        padding: 5% 0 0 0;
-        margin: 0 1%;
+        padding: 1% 0;
+        margin: 0% 1%;
         width: 30%;
-        height: 50%;
-    }
-    nav button{
-        box-shadow: 0;
-        opacity: 60%;
         float: left;
-        height: 40px;
-        font-size: 1em;
-        width: 150px;
+        font-size: 2em;
     }
-    main button:hover, nav button:hover{
-        padding: 0 0 2px 2px;
-        box-shadow: 0 0 0 0;
-        transition: 0.2s;
+    nav li:hover{
+        border-bottom: 1px dashed var(--bg-color);
+        cursor: pointer;
+        animation-name: firstAnimation;
+        animation-duration: 2s;
+        color: black; 
     }
-    main button:hover::first-letter, 
-    nav button:hover::first-letter{
-        color:black;
+
+    main{
+        margin:0;
+        padding: 5%;
+        float: left;
+    }
+    main h1{
+        border-left: 2px dashed var(--head-color);
+        font-size: 4em;
+        font-family: "Century Gothic";
+        font-weight: lighter;
+        color:grey;
+        margin-bottom: 5%;
+    }
+    main button{
+        margin: 0 25%;
+        width: 50%;
+        padding: 1%;
+        margin-bottom: 10%;
+        font-weight: lighter;
+    }
+    main button:hover{
+        animation-name: firstAnimation;
+        animation-duration: 2s;
+        box-shadow: 0px;
+        border-radius: 15px;
+        opacity: 1; 
     }
     
     /* allegro site */
     .allegro{
-        width: 90%;
-        height: 430px;
         float: left;
-        margin: 0 5%;
+        margin-top: 7%;
 
     }
     .blockAllegro{
-        width: 49%;
-        height: 100%;
-        float: left;
-    }
-    .blockAllegro:first-child{
-        width: 39%;
-        margin: 0 5%;
-        border-right: 2px solid var(--head-color);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .blockAllegroSmall{
-        height: 32%;
-        width: 90%;
-        float: left;
-        margin: 0 0%;
+        width: 31%;
+        margin: 0;
+        padding: 1%;
+        text-align: center;
+        height: 130px;
+        color:grey;
+        font: 1.2em bold;
         opacity: 1;
+    }
+    .blockAllegroSmall:nth-child(2){
+        border-left: 2px dashed var(--head-color);
+        border-right: 2px dashed var(--head-color);
     }
     .allegroImgSmart{
-        height: 50px;
-        width: 70%;
-        margin: 30px 10px;
-        opacity: 0.7;
+        margin: 5% 0;
     }
     .allegroImgSuperSprzedawca{
-        width: 80px;
-        height: 80px;
-        margin:10px 40px;
-        opacity: 0.7;
+        width: 20%;
     }
     .allegroImgCash{
-        height: 50px;
-        width: 63px;
-        margin:10px 40px;
-
-    }
-    .allegro p{
-        color:grey;
-        font-weight: bold;
-        opacity: 1;
-        margin: 2% 0
-    }
+        margin: 5% 0;
+        width: 10%;
+    } 
 
     /* contact site */
     .contactDesktop{
@@ -388,8 +257,8 @@
         width: 100%;
         padding: 10% 0;
         margin: 0;
-        border-bottom: 2px solid var(--head-color);
-        border-right: 2px solid var(--head-color);
+        border-bottom: 2px dashed var(--head-color);
+        border-right: 2px dashed var(--head-color);
     }
    
     .block h3{
@@ -492,5 +361,18 @@
         position: relative;
         border-radius: 20px 0px;
         text-align: center;
+    }
+}
+@keyframes firstAnimation {
+    0% {
+        left: 0;
+        color:var(--head-color);
+        background-color:white;
+    }
+    100%{
+        left: 100%;
+        box-shadow: 0px;
+        opacity: 1;
+        border-radius: 15px;
     }
 }
