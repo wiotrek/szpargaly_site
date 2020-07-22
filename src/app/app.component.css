@@ -282,6 +282,12 @@
         text-decoration: none;
         color:grey;
     }
+    table{
+        width: 90%;
+        margin: 0 5%;
+        padding: 0;
+        text-align: justify;
+    }
     .last{
         height: 650px;
         padding: 10% 0 0 0;
@@ -291,19 +297,38 @@
         width: 90%;
         height: 30px;
         margin: 5% 5%;
-        text-align: center;
         border: 2px solid grey;
         border-radius: 0 15px 0 15px;
         font-size: 20px;
         color: grey;
         font-weight: bold;
-
     }
-    table{
+    .last p{
+        float: left;
+        height: auto;
+        width: 100%;
+    }
+    .last textarea{
+        height: 270px;
         width: 90%;
-        margin: 0 5%;
-        padding: 0;
-        text-align: justify;
+        margin: 5% 5% 1%;
+        border-radius: 0 15px 0 15px;
+        border: 2px solid grey;
+    }
+    .buttonForm{
+        width: 50%;
+        margin: 0 25%;
+        border: 1px inset;
+        font-weight: bold;
+        background-color: white;
+        color:black;
+        padding: 1% 0;
+        opacity: 60%;
+    }
+    .buttonForm:hover{
+        animation-name: firstAnimation;
+        animation-duration: 2s;
+        opacity: 1; 
     }
 
 
@@ -311,32 +336,6 @@
     .maps{
         float: left;
         width: 100%;
-    }
-   
-   
-    /* aboutus site */
-    .aboutus{
-        height: 812px;
-        float: left;
-        padding: 0;
-        margin: 0;
-    }
-    .aboutus section{
-        /* height: 49%;
-        float: left;
-        padding: 1% 10%;
-        width: 80%; */
-        float: left;
-        margin: 0;
-        padding: 0;
-    }
-    .aboutus article{
-        width: 80%;
-        height: 40%;
-        margin: 0 10%;
-        padding: 0;
-        border: 0;
-
     }
     article .block{
         height: 70%;
@@ -346,9 +345,6 @@
         padding: 150px 5% 40px 5%;
         float: left;
         position: relative;
-    }
-    .aboutus h3{
-        font-size: 1.5em;
     }
     article .block2{
         height: 50%;

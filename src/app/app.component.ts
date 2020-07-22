@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { DeviceDetectorService } from 'ngx-device-detector';
 import * as AOS from 'aos';
-import { createElementCssSelector } from '@angular/compiler';
-import { element } from 'protractor';
 
 @Component({
   selector: 'app-root',

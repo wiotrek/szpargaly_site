@@ -3,16 +3,20 @@ import { NgModule } from '@angular/core';
 import { DeviceDetectorModule } from 'ngx-device-detector';
 
 import { AppComponent } from './app.component';
+import { AppContactComponent } from './app-contact/app-contact.component';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AppContactComponent
   ],
   imports: [
     BrowserModule,
-    DeviceDetectorModule.forRoot()
+    DeviceDetectorModule.forRoot(),
+    HttpClientModule
   ],
-  providers: [],
+  providers: [HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
