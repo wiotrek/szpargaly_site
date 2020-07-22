@@ -5,6 +5,7 @@ import { DeviceDetectorModule } from 'ngx-device-detector';
 import { AppComponent } from './app.component';
 import { AppContactComponent } from './app-contact/app-contact.component';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -13,8 +14,10 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
     DeviceDetectorModule.forRoot(),
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [HttpClientModule],
   bootstrap: [AppComponent]

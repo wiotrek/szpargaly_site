@@ -34,7 +34,7 @@ export class AppContactComponent implements OnInit {
           if (err.status === 200) {
             alert("Wiadomość została wysłana");
           } else {
-            alert("Something went wrong when sending your message.");
+            alert("Niestety nie udało się wysłać wiadomości");
             console.log('Error status:');
             console.log(err.status);
             console.log('Error body:');
